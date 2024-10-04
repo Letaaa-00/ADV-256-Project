@@ -2,5 +2,6 @@
 This repository is for recording my Adv-interactive prototype project.  
 ## Project 1 Hogwarts House Sorting Hat (lighting)
 
-When a person puts on a sorting hat, he will be assigned a house for them, flashing the colors of different house.
+I designed my first project based on the impressive Sorting Hat from the Harry Potter movies. 
+People wear it, and it flashes the colors representing the different house, and then randomly assigns you to one.
 
