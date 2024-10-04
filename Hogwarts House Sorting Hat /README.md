@@ -1,7 +1,7 @@
 ## Project 1 Hogwarts House Sorting Hat Describtion
 Project 1 describtion
 
-[Project  1 code link].[]
+[Project  1 code link].(Code.py)
 
 ```Python
 import os, sys, io
