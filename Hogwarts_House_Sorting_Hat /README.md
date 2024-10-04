@@ -3,7 +3,7 @@ I designed my first project based on the impressive Sorting Hat from the Harry P
 People wear it, and it flashes the colors representing the different schools, and then randomly assigns you to one.
 House of Gryffindor in red, Ravenclaw in blue,Hufflepuff in yellow and Slytherin in green.
 Image link:
-![Here is one image of my Hogwarts House Sorting Hat]()
+![Here is one image of my Hogwarts House Sorting Hat](Hat.png)
 
 
 ### Part 1 - Test Copper
