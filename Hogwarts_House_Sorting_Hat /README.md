@@ -57,7 +57,7 @@ there was compression, and the two copper overlapped. Unfortunately, because the
 
 Then I had to decide where to put the copper. But because the hat was so soft, the first and second places I tried were both a clip on the brim, and after putting the hat back on, the two copper overlapped due to the pressure. Unfortunately, because the hat was so soft, the chances of success were not high.
 I then decided to sew the copper to the brim of the hat, then sew a piece of fabric on, and then sew a copper on the inside. When the person puts on the hat and their head pushes up, the two copper can meet and connect the circuit.  
-![During test with copper](Sew.png)  
+![During test with copper](Sew.JPG)  
 
 ### Part 3 - How my interactive prototype should behave
 
