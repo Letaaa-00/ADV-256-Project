@@ -67,20 +67,17 @@ And here is my code link:
 [Hogwarts House Sorting Hat Code](main.py)
 
 ### Part 4 - Some video records for sort into different house
+Here is a video I recorded using the branch hat to divide into the different Hogwarts houses.
+Gryffindor
+[Hogwarts House Sorting Hat video Gryffindor](Gryf.MOV)
+Ravenclaw
+[Hogwarts House Sorting Hat video Ravenclaw](Raven.mov)
+Hufflepuff
+[Hogwarts House Sorting Hat video Hufflepuff](Huff.MOV)
+Slytherin
+[Hogwarts House Sorting Hat video Slytherin](Sly.MOV)
 
 
 
 
-[Hogwarts House Sorting Hat-code link](Code.py)
 
-```Python
-import os, sys, io
-import M5
-from M5 import *
-from hardware import *
-import time
-import random
-
-# Initialize M5 board
-M5.begin()
-```
