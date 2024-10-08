@@ -64,7 +64,7 @@ diagram that represents how my interactive prototype should behave
 ![Code diagram](Diagram.png)  
 
 And here is my code link:
-![Hogwarts House Sorting Hat Code](main.py)
+[Hogwarts House Sorting Hat Code](main.py)
 
 ### Part 4 - Some video records for sort into different house
 
