@@ -8,7 +8,7 @@ Here is one image of my Hogwarts House Sorting Hat:
 
 ### Part 1 - Test Copper
 After connecting to the M5, I first tested to see if the code for my copper's connection worked.
-![How it build in UIFLOW](Hat.png)
+![How it build in UIFLOW](UIFLOW.png)
 ```Python
 import os, sys, io
 import M5
