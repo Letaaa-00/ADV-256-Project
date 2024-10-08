@@ -50,16 +50,10 @@ if __name__ == '__main__':
 
 
 ### Part 2 - Figure out where my copper should place
-<div style="display: flex;">
-  <div style="flex: 1; padding-right: 10px;">
-    <h3>Column 1</h3>
-    <p>这是第一列的内容。</p>
-  </div>
-  <div style="flex: 1; padding-left: 10px;">
-    <h3>Column 2</h3>
-    <p>这是第二列的内容。</p>
-  </div>
-</div>
+| Column 1        | Column 2        |
+|-----------------|-----------------|
+| 这是第一列的内容 | 这是第二列的内容 |
+| 你可以在这里添加文本 | 也可以在这里添加文本 |
 
 ### Part 3 - How my interactive prototype should behave
 
