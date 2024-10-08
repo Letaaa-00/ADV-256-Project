@@ -50,7 +50,10 @@ if __name__ == '__main__':
 ![During test with copper](Copper.png)
 
 ### Part 2 - Figure out where my copper should place
-
+Then I had to decide where I should put the copper, but because the hat is so soft,
+the first and second places I looked were both a clip on the brim, and after putting the hat back on, 
+there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.
+![During test with copper](Copper.png)
 
 ### Part 3 - How my interactive prototype should behave
 
