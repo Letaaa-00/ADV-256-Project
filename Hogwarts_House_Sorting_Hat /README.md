@@ -69,13 +69,13 @@ And here is my code link:
 ### Part 4 - Some video records for sort into different house
 Here is a video I recorded using the branch hat to divide into the different Hogwarts houses.
 Gryffindor
-[Hogwarts House Sorting Hat video Gryffindor](Gryf.MOV)
+![Hogwarts House Sorting Hat video Gryffindor](Gryf.MOV)
 Ravenclaw
-[Hogwarts House Sorting Hat video Ravenclaw](Raven.mov)
+![Hogwarts House Sorting Hat video Ravenclaw](Raven.mov)
 Hufflepuff
-[Hogwarts House Sorting Hat video Hufflepuff](Huff.MOV)
+![Hogwarts House Sorting Hat video Hufflepuff](Huff.MOV)
 Slytherin
-[Hogwarts House Sorting Hat video Slytherin](Sly.MOV)
+![Hogwarts House Sorting Hat video Slytherin](Sly.MOV)
 
 
 
