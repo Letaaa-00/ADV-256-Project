@@ -61,8 +61,10 @@ I then decided to sew the copper to the brim of the hat, then sew a piece of fab
 
 ### Part 3 - How my interactive prototype should behave
 diagram that represents how my interactive prototype should behave
-![Code diagram](Diagram.png)
+![Code diagram](Diagram.png)  
 
+And here is my code link:
+![Hogwarts House Sorting Hat Code](main.py)
 
 ### Part 4 - Some video records for sort into different house
 
