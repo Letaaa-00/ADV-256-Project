@@ -47,7 +47,7 @@ if __name__ == '__main__':
     except ImportError:
       print("please update to latest firmware")
 ```
-![During test with copper](Try Copper work.png)
+![During test with copper](Copper.png)
 
 ### Part 2 - Figure out where my copper should place
 
