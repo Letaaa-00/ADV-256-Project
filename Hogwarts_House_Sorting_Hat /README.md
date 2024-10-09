@@ -10,7 +10,7 @@ Here is one image of my Hogwarts House Sorting Hat:
 ### Part 1 - Introduction of my initial project idea
 Here is my first two ideation of sketchs:
 
-![Here is one image of my Hogwarts House Sorting Hat](Hat.png)
+![Here is one image of my Hogwarts House Sorting Hat](sketchOfIdeation.png)
 
 
 ### Part 2 - Test Copper
