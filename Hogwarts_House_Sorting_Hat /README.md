@@ -7,7 +7,11 @@ Here is one image of my Hogwarts House Sorting Hat:
 ![Here is one image of my Hogwarts House Sorting Hat](Hat.png)
 
 
-### Part 1 - Test Copper
+### Part 1 - Introduction of my initial project idea
+
+
+
+### Part 2 - Test Copper
 After connecting to the M5, I first tested to see if the code for my copper's connection worked.
 ![How it build in UIFLOW](UIFLOW.png)
 ```Python
@@ -49,7 +53,7 @@ if __name__ == '__main__':
 ```
 ![During test with copper](Copper.png)
 
-### Part 2 - Figure out where my copper should place
+### Part 3 - Figure out where my copper should place
 Then I had to decide where I should put the copper, but because the hat is so soft,
 the first and second places I looked were both a clip on the brim, and after putting the hat back on, 
 there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.  
@@ -65,14 +69,14 @@ Here is the list of all the separate hardware components used in Hogwarts House 
 * RGB light stripe:
 * Copper with wire: 
 
-### Part 3 - How my interactive prototype should behave
+### Part 4 - How my interactive prototype should behave
 diagram that represents how my interactive prototype should behave
 ![Code diagram](Diagram.png)  
 
 And here is my code link:
 [Hogwarts House Sorting Hat Code](main.py)
 
-### Part 4 - Some video records for sort into different house
+### Part 5 - Some video records for sort into different house
 Here is a video I recorded using the branch hat to divide into the different Hogwarts houses.
 Gryffindor
 ![Hogwarts House Sorting Hat video Gryffindor](Gryf.MOV)
