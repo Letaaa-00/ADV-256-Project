@@ -59,6 +59,12 @@ Then I had to decide where to put the copper. But because the hat was so soft, t
 I then decided to sew the copper to the brim of the hat, then sew a piece of fabric on, and then sew a copper on the inside. When the person puts on the hat and their head pushes up, the two copper can meet and connect the circuit.  
 ![During test with copper](Sew.JPG)  
 
+Here is the list of all the separate hardware components used in Hogwarts House Sorting Hat
+* ATOM Lite: control   
+* Extention of ATOM: 
+* RGB light stripe:
+* Copper with wire: 
+
 ### Part 3 - How my interactive prototype should behave
 diagram that represents how my interactive prototype should behave
 ![Code diagram](Diagram.png)  
