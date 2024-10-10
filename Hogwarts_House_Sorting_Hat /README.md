@@ -16,7 +16,7 @@ This project involves creating an interactive Harry Potter Sorting Hat using an 
 
 
 ### Part 2 - Test Copper
-After connecting to the M5, I first tested to see if the code for my copper's connection worked.
+After connecting to the M5, I first tested to see if the code for my copper's connection worked.  
 ![How it build in UIFLOW](UIFLOW.png)
 ```Python
 import os, sys, io
@@ -60,11 +60,13 @@ if __name__ == '__main__':
 ### Part 3 - Figure out where my copper should place
 Then I had to decide where I should put the copper, but because the hat is so soft,
 the first and second places I looked were both a clip on the brim, and after putting the hat back on, 
-there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.    
+there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.  
+
 ![During test with copper](position1.png)  
 
 Then I had to decide where to put the copper. But because the hat was so soft, the first and second places I tried were both a clip on the brim, and after putting the hat back on, the two copper overlapped due to the pressure. Unfortunately, because the hat was so soft, the chances of success were not high.
 I then decided to sew the copper to the brim of the hat, then sew a piece of fabric on, and then sew a copper on the inside. When the person puts on the hat and their head pushes up, the two copper can meet and connect the circuit.  
+
 ![During test with copper](Sew.JPG)  
 
 Here is the list of all the separate hardware components used in Hogwarts House Sorting Hat
@@ -74,10 +76,12 @@ Here is the list of all the separate hardware components used in Hogwarts House 
 * Copper with wire: Act as sensors. When they touch, they close the circuit, triggering the sorting sequence.  
 
 ### Part 4 - How my interactive prototype should behave
-diagram that represents how my interactive prototype should behave
+diagram that represents how my interactive prototype should behave  
+
 ![Code diagram](Diagram.png)  
 
-And here is my code link:
+And here is my code link:  
+
 [Hogwarts House Sorting Hat Code](main.py)
 
 ### Part 5 - Some video records for sort into different house
