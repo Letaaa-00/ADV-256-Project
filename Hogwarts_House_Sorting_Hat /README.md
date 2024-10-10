@@ -8,7 +8,9 @@ Here is one image of my Hogwarts House Sorting Hat:
 
 
 ### Part 1 - Introduction of my initial project idea
-Here is my first two ideation of sketchs:
+Here is my first two ideation of sketchs:  
+
+This project involves creating an interactive Harry Potter Sorting Hat using an M5Stack development board, RGB LEDs, and copper plates as sensors. When the circuit is completed (by touching two copper plates), the hat begins a sequence of flashing colors representing Hogwarts houses: Gryffindor (red), Ravenclaw (blue), Hufflepuff (yellow), and Slytherin (green). After the flashing, a random house is selected, and the corresponding color lights up. The program announces the house, completing the magical sorting experience.  
 
 ![Here is one image of my Hogwarts House Sorting Hat](Ideation.png)
 
