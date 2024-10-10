@@ -60,7 +60,7 @@ if __name__ == '__main__':
 ### Part 3 - Figure out where my copper should place
 Then I had to decide where I should put the copper, but because the hat is so soft,
 the first and second places I looked were both a clip on the brim, and after putting the hat back on, 
-there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.  
+there was compression, and the two copper overlapped. Unfortunately, because the hat is soft, the chances of success are not high.    
 ![During test with copper](position1.png)  
 
 Then I had to decide where to put the copper. But because the hat was so soft, the first and second places I tried were both a clip on the brim, and after putting the hat back on, the two copper overlapped due to the pressure. Unfortunately, because the hat was so soft, the chances of success were not high.
