@@ -68,10 +68,10 @@ I then decided to sew the copper to the brim of the hat, then sew a piece of fab
 ![During test with copper](Sew.JPG)  
 
 Here is the list of all the separate hardware components used in Hogwarts House Sorting Hat
-* ATOM Lite: control   
-* Extention of ATOM: 
-* RGB light stripe:
-* Copper with wire: 
+* ATOM Lite: The core of the project, it controls the input/output and runs the program. It reads the circuit's state and controls the LEDs.  
+* Extention of ATOM: In order to additional input/output ports and enhancing connectivity options.  
+* RGB light stripe:  Represent the Hogwarts houses with different colors (red, blue, yellow, and green). They are connected to G2 and provide visual feedback during the sorting process.  
+* Copper with wire: Act as sensors. When they touch, they close the circuit, triggering the sorting sequence.  
 
 ### Part 4 - How my interactive prototype should behave
 diagram that represents how my interactive prototype should behave
