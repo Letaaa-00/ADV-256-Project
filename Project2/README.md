@@ -4,16 +4,16 @@ and when the player shines a flashlight,
 the terrain or path will be displayed on the screen. 
 Monsters will appear during the search process, and the light must be turned  
 
-Here is one image of my Hogwarts House Sorting Hat:
-![Here is one image of my Hogwarts House Sorting Hat](Hat.png)
+Here is one cover image:
+![Here is one image of my Hogwarts House Sorting Hat](candle.png)
 
 
 ### Part 1 - Introduction of my initial project idea
 Here is my first two ideation of sketchs:  
 
-This project involves creating an interactive Harry Potter Sorting Hat using an M5Stack development board, RGB LEDs, and copper plates as sensors. When the circuit is completed (by touching two copper plates), the hat begins a sequence of flashing colors representing Hogwarts houses: Gryffindor (red), Ravenclaw (blue), Hufflepuff (yellow), and Slytherin (green). After the flashing, a random house is selected, and the corresponding color lights up. The program announces the house, completing the magical sorting experience.  
+This project uses the M5Stack development board and a reflective sensor as the game's control. It also controls the brightness of the lantern and the light and dark of the environment in which the little man in the game is located. When facing a monster, you need to turn off the light and wait three seconds to avoid the monster. The game is won or lost by avoiding the monster.
 
-![Here is one image of my Hogwarts House Sorting Hat](Ideation.png)
+![Here is one image of my sketch](sketch.png)
 
 
 ### Part 2 - Test Copper
