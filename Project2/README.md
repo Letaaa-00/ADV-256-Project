@@ -81,3 +81,162 @@ def set_brightness(brightness):
     rgb2.fill_color(rgb_color)
 
 ```
+### Part 4 - How my interactive prototype should behave
+
+Allow me explain the inputs/outputs used in my code and how they affect the behavior of in Digital Game.
+* Imports the p5.js library for drawing and handling graphics (aliased as p5) and document from JavaScript, allowing access to HTML elements for interaction.
+```Python
+import js as p5
+from js import document
+```
+
+* Initializes variables for different images used in the game, such as background_img, avatar_img, and several monster images.
+```Python
+# Load images
+background_img = None
+avatar_img = None
+monster1_img = None
+monster2_img = None
+monster3_img = None
+achieve_img = None
+win_img = None
+
+```
+
+* Defines various game-related variables: monster_x for monster position, sensor_value for reading sensor input, brightness for screen brightness, game_state to track the game's status, and bg_x and bg_scale for handling background movement and scaling.
+
+```Python
+# Variables
+monster_x = 500
+sensor_value = 0
+brightness = 255
+monster_timer = 0
+game_state = "play"  # states: play, game_over, win
+monster_index = 0
+monsters = []  # List to store the monster images
+bg_x = 0  # For background movement
+bg_scale = 1.5  # Scale factor for the background
+
+```
+
+
+* Loads all image assets needed for the game, such as the background, avatar, and monster images, storing them as global variables.
+
+```Python
+def preload():
+    global background_img, avatar_img, monster1_img, monster2_img, monster3_img, achieve_img, win_img, monsters
+    background_img = p5.loadImage("Background.png")
+    avatar_img = p5.loadImage("Avatar.png")
+    monster1_img = p5.loadImage("Monster1.png")
+    monster2_img = p5.loadImage("Monster2.png")
+    monster3_img = p5.loadImage("Monster3.png")
+    achieve_img = p5.loadImage("achieve.png")
+    win_img = p5.loadImage("win.png")
+    monsters = [monster1_img, monster2_img, monster3_img]  # Load monsters into list
+
+```
+
+* Sets up the game by creating an 800x400 canvas and printing a message indicating that setup is complete.
+
+```Python
+def setup():
+    p5.createCanvas(800, 400)  # Adjust canvas size
+    print('Game setup complete')
+
+```
+
+* This function is called continuously to render the game frame-by-frame.
+
+```Python
+def draw():
+    global monster_timer, sensor_value, brightness, game_state, monster_index, bg_x, monster_x
+```
+
+
+* Reads the value from a "data" HTML element (likely for a sensor) to adjust brightness, which then changes the background color accordingly.
+
+```Python
+    # Reading data from reflective sensor
+    sensor_value = int(document.getElementById("data").innerText)
+    brightness = int(sensor_value)
+    
+    # Adjust screen brightness
+    p5.background(brightness)
+
+```
+
+* Moves the background to create a scrolling effect. When bg_x reaches a certain point, it resets to create a looped background.
+```Python
+       bg_x -= 10 * p5.deltaTime / 1000  # 10px per second movement
+    if bg_x <= -background_img.width * bg_scale:  # Wrap background
+        bg_x = 0
+    
+    # Scale and draw the background at its correct ratio
+    p5.push()
+    p5.scale(bg_scale)
+    p5.image(background_img, bg_x / bg_scale, 200 / bg_scale)
+    p5.image(background_img, (bg_x + background_img.width) / bg_scale, 200 / bg_scale)
+    p5.pop()
+
+
+```
+
+* The game has three states: "play", "game_over", and "win". In "play" mode, the avatar and monsters are rendered, and game logic runs.
+* Avatar Drawing: The avatar is displayed at a fixed position on the screen.
+* Monster Logic: The monster moves horizontally. Every 10 seconds, it appears at a set position. Based on sensor_value, the game state changes to "game_over" or "win".
+```Python
+     if game_state == "play":
+        # Avatar logic
+        p5.image(avatar_img, 100, 240)
+        
+        # Monster logic (every 10 seconds)
+        monster_timer += p5.deltaTime / 1000
+        monster_x -= 20 * p5.deltaTime / 1000
+        if monster_timer >= 10:
+            p5.image(monster2_img, monster_x, p5.height - 350)  
+        if monster_x <= 120 and sensor_value == 255:
+            game_state = "game_over"
+        if monster_x <= 120 and sensor_value == 12:
+            game_state = "win"
+
+
+```
+
+
+* Displays different text and background colors based on whether the player has won or lost.
+```Python
+     elif game_state == "game_over":
+        p5.background(0)  # Black screen
+        p5.fill(255)  # White text
+        p5.textSize(50)
+        p5.textAlign(p5.CENTER, p5.CENTER)
+        p5.text("You've been captured ", p5.width / 2, p5.height / 3)
+        p5.text("by monster ", p5.width / 2, p5.height /2 )
+
+    elif game_state == "win":
+        p5.background(0)
+        p5.fill(255)
+        p5.textSize(50)
+        p5.textAlign(p5.CENTER, p5.CENTER)
+        p5.text("You survived from monster ", p5.width / 2, p5.height /2 )
+
+```
+
+* This function calculates the distance between the avatar and a fixed point to check if they collide, indicating the player reached the achievement.
+```Python
+ def avatar_touches_achieve():
+    # Check if avatar touches achievement
+    return p5.dist(200, 200, 600, p5.height - 150) < 50
+
+```
+
+
+
+
+
+
+
+
+
+
+
