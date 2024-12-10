@@ -17,13 +17,16 @@ This project uses a soft robot and reflective sensors for post-disaster search a
 
 ![Here is one image of my sketch](sketch1.png)
 ![Here is one image of my sketch](sketch2.png)
+![Process of hidden M5 stack](researchp.png)  
+![Process of hidden M5 stack](research1.png)
+![Process of hidden M5 stack](researchq2.png)
+![Process of hidden M5 stack](researcha2.png)
 
 
-### Part 2 - Process of making lanterns
+### Part 2 - Process of making soft robot
 I designed a soft robotic model inspired by octopus tentacles, focusing on its flexibility and crawling capability. The model was developed in Rhino and fabricated using silicone materials to ensure softness and durability. The crawling mechanism uses a pneumatic system to simulate the expansion and contraction of the tentacle. Reflective sensors were integrated into the design to detect light intensity and locate obstacles or survivors in disaster scenarios. Additionally, I incorporated a lightweight structure to house components such as the air pump, pressure regulator, and control module, ensuring the robot remains compact and maneuverable in tight spaces.
 
-![Process of hidden M5 stack](sketch1.png)  
-![Process of hidden M5 stack](assemble.png)  
+![Process of hidden M5 stack](process.png)  
 
 Here is the list of all the separate hardware components used in Hogwarts House Sorting Hat
 * Soft Robotic Model: The core of the project, designed to mimic the flexibility and movement of octopus tentacles. It uses pneumatic chambers to enable crawling through tight spaces. 
@@ -34,12 +37,12 @@ Here is the list of all the separate hardware components used in Hogwarts House 
 * Control Module (M5Stack): Manages sensor input and pneumatic control, running the program that coordinates the robot's movement and detection tasks.
 * LED Indicator: Provides visual feedback, such as flashing or steady green light, to indicate detected survivors or operational status during rescue missions.
 
-![Process of hidden M5 stack](assemble.png) 
+![Process of hidden M5 stack](p diagram.png) 
 
 ### Part 4 - How my interactive prototype should behave
 diagram that represents how my interactive prototype should behave  
 
-![Code diagram](diagram.png)  
+![Code diagram](d diagram.png)  
 
 Allow me explain the inputs/outputs used in my code and how they affect the behavior of the lantern in Thonny.
 * The code imports necessary modules, including the M5 library, time library, m5utils, and hardware module, enabling interaction with the M5Stack board and connected hardware components.
