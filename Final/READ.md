@@ -7,7 +7,7 @@ reaching areas inaccessible to traditional rescue equipment or larger robots.
 Flexible, Precise, and Reliable.
 
 Here is one cover image:
-![Here is one image of my Hogwarts House Sorting Hat](candle.png)
+![Here is one image of my Hogwarts House Sorting Hat](cover.png)
 
 
 ### Part 1 - Introduction of my initial project idea
