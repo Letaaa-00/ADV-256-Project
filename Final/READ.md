@@ -15,13 +15,14 @@ Here is my first ideation of sketch:
 
 This project uses a soft robot and reflective sensors for post-disaster search and rescue. The soft tentacles can pass through small spaces and the sensors can detect the presence of survivors. The robot can adjust its movements based on detected light and obstacles, while using green light to indicate the location of discovered survivors and provide simple medical support. The success of the rescue depends on the robot being able to safely reach the survivors and provide initial assistance.
 
-![Here is one image of my sketch](sketch.png)
+![Here is one image of my sketch](sketch1.png)
+![Here is one image of my sketch](sketch2.png)
 
 
 ### Part 2 - Process of making lanterns
 I designed a soft robotic model inspired by octopus tentacles, focusing on its flexibility and crawling capability. The model was developed in Rhino and fabricated using silicone materials to ensure softness and durability. The crawling mechanism uses a pneumatic system to simulate the expansion and contraction of the tentacle. Reflective sensors were integrated into the design to detect light intensity and locate obstacles or survivors in disaster scenarios. Additionally, I incorporated a lightweight structure to house components such as the air pump, pressure regulator, and control module, ensuring the robot remains compact and maneuverable in tight spaces.
 
-![Process of hidden M5 stack](rhino.png)  
+![Process of hidden M5 stack](sketch1.png)  
 ![Process of hidden M5 stack](assemble.png)  
 
 Here is the list of all the separate hardware components used in Hogwarts House Sorting Hat
