@@ -113,4 +113,73 @@ def adjust_brightness(sensor_value):
 
 
 ```
+### Part 5 - My complete Prototype 
+Part 1: Move forward
+```Python
+# configure pin 8 as output:
+pin8 = Pin(5, mode=Pin.OUT)
+
+while True:           # infinite loop
+  M5.update()         # update M5 board
+  pin8.on()           # turn on pin 8
+  time.sleep_ms(6000)  # wait for 500 milliseconds
+  pin8.off()          # turn off pin 8 
+  time.sleep_ms(6000)  # wait for 100 milliseconds
+
+```
+
+Part 2: rescue prototype link with protopie and thonny
+```Python
+# Initialize RGB light (white and green LED) on Pin 38
+rgb2 = RGB(io=38, n=30, type="SK6812")
+
+# Initialize reflective sensor on Pin 8
+adc = ADC(Pin(8), atten=ADC.ATTN_11DB)
+
+# Function to set RGB light color
+def set_rgb_color(r, g, b):
+    color = (r << 16) | (g << 8) | b  # Convert RGB values to a single color
+    rgb2.fill_color(color)
+
+# Function to adjust RGB light brightness based on sensor value
+def adjust_brightness(sensor_value):
+    max_sensor_value = 4095  # Assuming the sensor outputs values between 0 and 4095
+    # Calculate brightness (inverse relationship: lower sensor value -> higher brightness)
+    brightness = int((1 - (sensor_value / max_sensor_value)) * 255)
+    set_rgb_color(brightness, brightness, brightness)  # Set LED brightness as white light
+
+# Main loop
+while True:
+    # Read the sensor value from Pin 8
+    sensor_value = adc.read()
+
+    # Detect if the sensor is covered (threshold can be adjusted)
+    if sensor_value < 500:  # Assume covered if below this threshold
+        print("1")  # Sensor covered, sending signal
+        time.sleep(3)  # Wait for 3 seconds
+
+        # Flash white light for 24 seconds
+        print("Flashing white light for 24 seconds")
+        start_time = time.time()
+        while time.time() - start_time < 24:  # Flash for 24 seconds
+            set_rgb_color(255, 255, 255)  # Set white light
+            time.sleep(0.5)  # On for 0.5 seconds
+            set_rgb_color(0, 0, 0)  # Turn off
+            time.sleep(0.5)  # Off for 0.5 seconds
+
+        # Turn on green light for 4 seconds
+        print("Green light ON for 4 seconds")
+        set_rgb_color(0, 255, 0)  # Green light
+        time.sleep(4)
+
+        # Turn off the green light
+        set_rgb_color(0, 0, 0)
+
+    else:
+        # Adjust brightness dynamically based on sensor value
+        print(f"Sensor Value: {sensor_value}")  # Debug information
+        adjust_brightness(sensor_value)  # Adjust LED brightness dynamically
+
+
+```  
 
